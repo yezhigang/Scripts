@@ -1,0 +1,337 @@
+{
+  "id": "yezhigang.app.sub",
+  "name": "yezhigang收集订阅",
+  "author": "@yezhigang",
+  "icon": "https://avatars0.githubusercontent.com/u/29530778?s=40&v=4",
+  "repo": "https://github.com/yezhigang/Script",
+  "apps": [{
+    "id": "qqreadsp",
+   "name": "QQ阅读多账号",
+      "descs_html": [
+        "使用说明：",
+	      "为了一步到位成功，❗请按以下步骤操作❗，尽量避免出错。老鸟飘过(*^_^*)",
+              "1.Cookie获取方式【<a href=\"https://m.q.qq.com/a/s/f9726d0a930319a7dd35bbcc8e42dc60 \">点我打开</a>】已测试圈叉与loon.",
+	      "2.点开【<a href=\"https://raw.githubusercontent.com/xingliuchao/jd/main/ps.txt\">ps.txt</a>】添加引用获取Cookie与Task.注意要启用→重写引用",			
+              "3.在以下要抓账号中填写要获取的序号",
+	      "4.从书库看①本📕新书📕新书！！看5秒然后左上角返回，获取cookie与body❀共3项。☞保存设置😀",
+	      "5.切换QQ账号♥♥循环1-3-4（2已引用，不必重复）重新获取下个账号.可以N多账号，6后面直接填写7.8..❗️完成后禁用重写规则",
+	      "6.感谢ziye付出"],
+      "keys": ["qqreadbd", "qqreadtimeurl", "qqreadtimehd", "qqreadbd2", "qqreadtimeurl2", "qqreadtimehd2", "qqreadbd3", "qqreadtimeurl3", "qqreadtimehd3", "qqreadbd4", "qqreadtimeurl4", "qqreadtimehd4", "qqreadbd5", "qqreadtimeurl5", "qqreadtimehd5", "qqreadhd6", "qqreadbd6", "qqreadtimeurl6", "qqreadtimehd6"],
+    "settings": [{
+        "id": "qeSuffix",
+        "name": "要抓账号",
+        "val": "1",
+        "type": "number",
+        "desc": "当前要抓取cookie的账号序号，如：1、2、3、4"
+      },
+      {
+        "id": "qeCount",
+        "name": "运行账号个数",
+        "val": "1",
+        "type": "number",
+        "desc": "要同时跑几个账号"
+      }
+    ],
+    "script": "https://raw.githubusercontent.com/xingliuchao/jd/main/QQread.js",
+     "repo": ["https://github.com/xingliuchao/jd/blob/main/QQread.js"],
+     "author": "@xingliuchao",    
+     "icons": ["https://raw.githubusercontent.com/xingliuchao/jd/main/xingliuchao.png", "https://raw.githubusercontent.com/xingliuchao/jd/main/png/qieread.png"] 
+    },
+    {
+    "id": "QreadAPP",
+    "name": "QQ阅读APP",
+     "descs_html": [
+       "使用说明:",
+	  "签到，看视频，开宝箱--cookie引用在QQreadCookie内"],
+    "keys": ["QQreadhd", "QQreadvideohd"],
+    "author": "@xingliuchao",
+    "repo": "https://github.com/ziye12/JavaScript/blob/master/Task/QQread.js",
+    "icons": ["https://raw.githubusercontent.com/xingliuchao/jd/main/xingliuchao.png", "https://raw.githubusercontent.com/xingliuchao/jd/main/png/QQreadapp.png"],
+    "script": "https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/QQread.js"
+    },
+    {
+      "id": "carhome",
+      "name": "汽车之家极速版",
+      "descs_html": [
+       "使用说明:将近20个获取值🤦‍做好耐心准备",
+	  "仅辅助使用，🚗本脚本来自ziye，感谢付出🚗 邀请码  48635465 🎈 填写后都会有金币奖励，ziye码在脚本里",
+          "需要获取的东西较多，请耐心操作，细心读完，避免失败",
+	      "最好耐心跟做，希望成功。为了一步到位成功，❗请按以下步骤操作❗，尽量避免出错。老鸟飘过(*^_^*)",
+              "a.Cookie获取方式【<a href=\"http://athm.cn/z5tSeuc \">点我打开，进入app</a>】已测试圈叉与loon.",
+	      "b.点开【<a href=\"https://raw.githubusercontent.com/xingliuchao/jd/main/ps.txt\">ps.txt</a>】添加引用获取Cookie与Task.注意要启用→重写引用.❗成功header后禁用该条引用",	
+	   "1.引用第一个重写---我>>获取用户名header",
+           "2.活动>>分享赚现金 自己助力自己 获取助力任务header",
+	   "3.注释header重写，添加第一个body重写😀即引用第二个重写",
+	   "4.活动 获取账户信息 签到任务 活动body",
+	   "5.首页>>右上角 获取时段 时段翻倍body",
+	   "6.活动>>分享赚现金 自己助力自己 获取助力任务body" ,
+	   "7.活动>>现金收入>>提现>>立即提现 获取提现body",
+	   "8.⚠️⚠️⚠️以上CK全部获取完以后，添加时段body重写即第3个重写引用，在boxjs里设置ins的值，再按操作获取活动页面body",
+	     "设置ins=1点击 活动 右上角领惊喜福利 获取惊喜福利body",
+	     "设置ins=2点击 活动 看视频领金币 获取视频body",
+             "设置ins=3点击 活动 观看福利视频 获取福利视频body",
+             "设置ins=4点击 活动 领取福利 获取福利body", 
+            "9.❗❗❗❗❗获取完整后一定要禁用关于汽车之家的所有重写引用，因为它会导致别的APP无网络",
+         "c.看到这了建议填写邀请码助力😀获取金币,以下必须细心操作🙃"],
+      "author": "@xingliuchao",
+            "settings": [
+		    {
+			"id": "notifyInterval",
+			"name": "默认开启通知",
+			"val": "1",
+			"type": "radios",
+			"desc": "根据实际情况选择",
+                        "items": [
+            {
+              "key": "0",
+              "label": "关闭通知"
+            },
+            {
+              "key": "1",
+              "label": "开启通知"
+            }
+            
+          ]
+	    },    
+	    {
+               "id": "qczjIns",
+               "name": "仅关于活动页面改Ins获取body,即第3个重写引用开启---0不获取",
+               "val": "0",
+               "type": "number",
+               "desc": "0不获取，1获取惊喜福利body，2获取视频body,3获取福利视频body,4获取福利body"
+                 }
+	    ],
+      "icons": ["https://raw.githubusercontent.com/xingliuchao/jd/main/xingliuchao.png", "https://raw.githubusercontent.com/xingliuchao/jd/main/png/carhome.png"],
+      "repo": "https://github.com/ziye12/QCZJSPEED/blob/main/Task/qczjspeed.js",
+      "script": "https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/Task/qczjspeed.js"    
+   },
+   {
+"id": "ziye.app.sub",
+"name": "ziye 汽车之家极速版订阅",
+"author": "@ZIYE",
+"icon": "",
+"repo": "https://github.com/ziye12/QCZJSPEED",
+"apps": [{
+"id": "qczjspeed",
+"name": "汽车之家极速版",
+"keys": ["GetUserInfourl", "GetUserInfoheader", "coinbody", "taskbody", "activitybody",  "Goldcoinbody",  "videobody", "Welfarevideobody", "Welfarebody", "addCoinbody", "addCoin2body", "reportAssbody", "reportAssheader", "cointowalletbody","GetUserInfourl2", "GetUserInfoheader2", "coinbody2", "taskbody2", "activitybody2", "Goldcoinbody2",  "videobody2", "Welfarevideobody2", "Welfarebody2", "addCoinbody2", "addCoin2body2", "reportAssbody2", "reportAssheader2", "cointowalletbody2","GetUserInfourl3", "GetUserInfoheader3", "coinbody3", "taskbody3", "activitybody3", "Goldcoinbody3",  "videobody3", "Welfarevideobody3", "Welfarebody3", "addCoinbody3", "addCoin2body3", "reportAssbody3", "reportAssheader3", "cointowalletbody3","GetUserInfourl4", "GetUserInfoheader4", "coinbody4", "taskbody4", "activitybody4", "Goldcoinbody4",  "videobody4", "Welfarevideobody4", "Welfarebody4", "addCoinbody4", "addCoin2body4", "reportAssbody4", "reportAssheader4", "cointowalletbody4","GetUserInfourl5", "GetUserInfoheader5", "coinbody5", "taskbody5", "activitybody5", "Goldcoinbody5",  "videobody5", "Welfarevideobody5", "Welfarebody5", "addCoinbody5", "addCoin2body5", "reportAssbody5", "reportAssheader5", "cointowalletbody5","GetUserInfourl6", "GetUserInfoheader6", "coinbody6", "taskbody6", "activitybody6", "Goldcoinbody6",  "videobody6", "Welfarevideobody6", "Welfarebody6", "addCoinbody6", "addCoin2body6", "reportAssbody6", "reportAssheader6", "cointowalletbody6","GetUserInfourl7", "GetUserInfoheader7", "coinbody7", "taskbody7", "activitybody7", "Goldcoinbody7",  "videobody7", "Welfarevideobody7", "Welfarebody7", "addCoinbody7", "addCoin2body7", "reportAssbody7", "reportAssheader7", "cointowalletbody7","GetUserInfourl8", "GetUserInfoheader8", "coinbody8", "taskbody8", "activitybody8", "Goldcoinbody8",  "videobody8", "Welfarevideobody8", "Welfarebody8", "addCoinbody8", "addCoin2body8", "reportAssbody8", "reportAssheader8", "cointowalletbody8","GetUserInfourl9", "GetUserInfoheader9", "coinbody9", "taskbody9", "activitybody9", "Goldcoinbody9",  "videobody9", "Welfarevideobody9", "Welfarebody9", "addCoinbody9", "addCoin2body9", "reportAssbody9", "reportAssheader9", "cointowalletbody9","GetUserInfourl10", "GetUserInfoheader10", "coinbody10", "taskbody10", "activitybody10", "Goldcoinbody10",  "videobody10", "Welfarevideobody10", "Welfarebody10", "addCoinbody10", "addCoin2body10", "reportAssbody10", "reportAssheader10", "cointowalletbody10","GetUserInfourl1", "GetUserInfoheader11", "coinbody11", "taskbody11", "activitybody11", "Goldcoinbody11",  "videobody11", "Welfarevideobody11", "Welfarebody11", "addCoinbody11", "addCoin2body11", "reportAssbody12", "reportAssheader11", "cointowalletbody11","GetUserInfourl12", "GetUserInfoheader12", "coinbody12", "taskbody12", "activitybody12", "Goldcoinbody12",  "videobody12", "Welfarevideobody12", "Welfarebody12", "addCoinbody12", "addCoin2body12", "reportAssbody12", "reportAssheader12", "cointowalletbody12","GetUserInfourl13", "GetUserInfoheader13", "coinbody13", "taskbody13", "activitybody13", "Goldcoinbody13",  "videobody13", "Welfarevideobody13", "Welfarebody13", "addCoinbody13", "addCoin2body13", "reportAssbody13", "reportAssheader13", "cointowalletbody13","GetUserInfourl14", "GetUserInfoheader14", "coinbody14", "taskbody14", "activitybody14", "Goldcoinbody14",  "videobody14", "Welfarevideobody14", "Welfarebody14", "addCoinbody14", "addCoin2body14", "reportAssbody14", "reportAssheader14", "cointowalletbody14","GetUserInfourl15", "GetUserInfoheader15", "coinbody15", "taskbody15", "activitybody15", "Goldcoinbody15",  "videobody15", "Welfarevideobody15", "Welfarebody15", "addCoinbody15", "addCoin2body15", "reportAssbody15", "reportAssheader15", "cointowalletbody15","GetUserInfourl16", "GetUserInfoheader16", "coinbody16", "taskbody16", "activitybody16", "Goldcoinbody16",  "videobody16", "Welfarevideobody16", "Welfarebody16", "addCoinbody16", "addCoin2body16", "reportAssbody16", "reportAssheader16", "cointowalletbody16","GetUserInfourl17", "GetUserInfoheader17", "coinbody17", "taskbody17", "activitybody17", "Goldcoinbody17",  "videobody17", "Welfarevideobody17", "Welfarebody17", "addCoinbody17", "addCoin2body17", "reportAssbody17", "reportAssheader17", "cointowalletbody17","GetUserInfourl18", "GetUserInfoheader18", "coinbody18", "taskbody18", "activitybody18", "Goldcoinbody18",  "videobody18", "Welfarevideobody18", "Welfarebody18", "addCoinbody18", "addCoin2body18", "reportAssbody18", "reportAssheader18", "cointowalletbody18","GetUserInfourl19", "GetUserInfoheader19", "coinbody19", "taskbody19", "activitybody19", "Goldcoinbody19",  "videobody19", "Welfarevideobody19", "Welfarebody19", "addCoinbody19", "addCoin2body19", "reportAssbody19", "reportAssheader19", "cointowalletbody19","GetUserInfourl20", "GetUserInfoheader20", "coinbody20", "taskbody20", "activitybody20", "Goldcoinbody20",  "videobody20", "Welfarevideobody20", "Welfarebody20", "addCoinbody20", "addCoin2body20", "reportAssbody20", "reportAssheader20", "cointowalletbody20"],
+"author": "@ziye",
+"settings": [{
+"id": "qczjSuffix",
+"name": "当前账号",
+"val": "1",
+"type": "number",
+"desc": "当前抓取ck记录的账号序号，如：1、2、4、"
+},
+{
+"id": "qczjCount",
+"name": "账号个数",
+"val": "1",
+"type": "number",
+"desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+},
+{
+"id": "qczjIns",
+"name": "获取body",
+"val": "0",
+"type": "number",
+"desc": "0不获取，1获取惊喜福利body，2获取视频body,3获取福利视频body,4获取福利body"
+}
+],
+"repo": "https://github.com/ziye12/QCZJSPEED/blob/main/Task/qczjspeed.js",
+"icons": ["https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/qczjspeed.jpg", "https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/qczjspeed.jpg"],
+"script": "https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/Task/qczjspeed.js"
+     },
+     {
+    "id": "jrtt",
+    "name": "今日头条极速版",
+     "descs_html": [
+       "使用说明:",
+	  "仅辅助使用， 😀邀请码 1465420698 🎈 填写后你得一元😀",
+	      "为了一步到位成功，❗请按以下步骤操作❗，尽量避免出错。老鸟飘过(*^_^*)",
+              "a.点开（shareCode）复制整段话打开头条极速版助个力😀【<a href=\"https://raw.githubusercontent.com/xingliuchao/jd/main/shareCode.txt\">shareCode.txt</a>】已测试圈叉与loon",
+	      "b.点开【<a href=\"https://raw.githubusercontent.com/xingliuchao/jd/main/ps.txt\">ps.txt</a>】添加引用获取Cookie.注意要启用→重写引用",	
+           "签到即可获取签到cookie 进一次农场即可获取农场cookie  读文章弹出金币获取读文章cookie❗成功后禁用该条引用"],
+    "keys": ["farmurl", "farmkey", "signurl", "signkey", "readurl", "readkey"],
+     "settings": [
+       {
+			"id": "notify",
+			"name": "默认开启通知",
+			"val": "1",
+			"type": "radios",
+			"desc": "根据实际情况选择",
+                        "items": [
+            {
+              "key": "0",
+              "label": "关闭通知"
+            },
+            {
+              "key": "1",
+              "label": "开启通知"
+            }]
+	 }	  
+    ],
+	     
+    "author": "@xingliuchao",
+    "repo": "https://github.com/xingliuchao/jd/blob/main/jrtt.js",
+    "icons": ["https://raw.githubusercontent.com/xingliuchao/jd/main/xingliuchao.png", "https://raw.githubusercontent.com/xingliuchao/jd/main/png/tt.png"],
+    "script": "https://raw.githubusercontent.com/xingliuchao/jd/main/jrtt.js"
+    },
+    {
+    "id": "BaiduSP",
+    "name": "百度极速",
+     "descs_html": [
+       "使用说明:",
+	     "为了一步到位成功，❗请按以下步骤操作❗，尽量避免出错。老鸟飘过(*^_^*)",
+	      "有必要的一步👉【<a href=\"https://dwz.cn/PTCBgNNk \">点我打开</a>】👈.",
+	      "1.Cookie获取方式【<a href=\" https://tieba.baidu.com \">点我打开，进入登陆</a>】.",
+	      "2.点开【<a href=\"https://raw.githubusercontent.com/xingliuchao/jd/main/ps.txt\">ps.txt</a>】，添加引用获取Cookie与Task.注意要启用→重写引用",
+	      "进入刚才那个网页并刷新网页",
+              "3.❗️完成后禁用重写规则，感谢sunert大佬"],
+    "keys": ["CookieTB"],
+    "author": "@chavyleung-xingliuchao",
+    "repo": "https://github.com/sazs34/TaskConfig/blob/master/task/sign_baidu_tieba_v2.js",
+    "script": "https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js",
+    "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/baidu.png", "https://raw.githubusercontent.com/Orz-3/task/master/baidu.png"]
+     },
+     {
+        "id": "youth",
+        "name": "中青看点",
+        "keys": ["youthheader_zq", "read_zq", "red_zq", "readtime_zq"],
+        "author": "@sunert",
+        "settings": [{
+            "id": "notifytimes",
+            "name": "通知频率 (点击查看设置说明)",
+            "val": "",
+            "type": "number",
+            "desc": "设定通知频率，前三次为全部通知，之后转盘次数/设定频率整除时通知，如设置0为无通知，设置1为全部通知，设置其他数可整除余0时通知，默认值50"
+        },
+        {
+            "id": "zqlogs",
+            "name": "调试日志",
+            "val": false,
+            "type": "boolean",
+            "desc": "调试日志开关，默认关闭"
+        }],
+        "repo": "https://github.com/Sunert/Scripts/blob/master/Task/youth.js",
+        "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/youth.png", "https://raw.githubusercontent.com/Orz-3/task/master/youth.png"],
+        "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js"
+    },
+    {
+        "id": "youthGain",
+        "name": "中青浏览赚",
+        "keys": ["youth_start", "youth_end"],
+        "author": "@sunert",
+        "repo": "https://github.com/Sunert/Scripts/blob/master/Task/youth_gain.js",
+        "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/youth.png", "https://raw.githubusercontent.com/Orz-3/task/master/youth.png"],
+        "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth_gain.js"
+    },
+    {
+			"id": "sy_youth_read",
+			"name": "中青自动阅读",
+			"keys": ["zqgetbody_body","zqgetbody_body1"],
+			"settings": [
+				{
+					"id": "zqgetbody_body",
+					"name": "请求body",
+					"val": "",
+					"type": "textarea",
+					"autoGrow": false,
+					"rows": 1,
+					"desc": "阅读文章和看视频，倒计时转一圈显示青豆到账即可，多看几篇文章和视频，获得更多包数据"
+				}
+				,
+				{
+					"id": "zqgetbody_body1",
+					"name": "请求body",
+					"val": "",
+					"type": "textarea",
+					"autoGrow": false,
+					"rows": 1,
+					"desc": "阅读文章和看视频，倒计时转一圈显示青豆到账即可，多看几篇文章和视频，获得更多包数据"
+				}
+				,
+				{
+					"id": "zqgetbody_body_index",
+					"name": "上次执行位置",
+					"val": "",
+					"type": "textarea",
+					"autoGrow": false,
+					"rows": 1,
+					"desc": "记录上次执行的位置，可以控制从第几个body开始执行"
+				}
+				,
+				{
+					"id": "zqgetbody_body_index1",
+					"name": "上次执行位置",
+					"val": "",
+					"type": "textarea",
+					"autoGrow": false,
+					"rows": 1,
+					"desc": "记录上次执行的位置，可以控制从第几个body开始执行"
+				}
+			],
+			"author": "@syzzzf",
+			"repo": "https://github.com/songyangzz/QuantumultX/blob/master/YOUTH_READ.js",
+			"icons": [
+				"https://raw.githubusercontent.com/Orz-3/mini/master/youth.png",
+				"https://raw.githubusercontent.com/Orz-3/task/master/youth.png"]
+    },
+    {
+    "id": "youthQD",
+    "name": "中青多账号签到+转盘抽奖",
+    "keys": ["youthheader_zq", "read_zq", "red_zq", "readtime_zq","youthheader_zq2", "read_zq2", "red_zq2", "readtime_zq2","youthheader_zq3", "read_zq3", "red_zq3", "readtime_zq3"],
+    "author": "@jiuli",
+    "settings": [
+      {
+        "id": "zqSuffix",
+        "name": "当前账号",
+        "val": "1",
+        "type": "number",
+        "desc": "当前抓取ck记录的账号序号，如：1、2、3目前仅支持3账号"
+      },
+      {
+        "id": "zqCount",
+        "name": "账号个数",
+        "val": "1",
+        "type": "number",
+        "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+      }
+    ],
+    "repo": "https://raw.githubusercontent.com/jiuli12/Script/main/youth.js",
+    "icons": ["https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png", "https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png"],
+    "script": "https://raw.githubusercontent.com/jiuli12/Script/main/youth.js"
+  },{
+    "id": "youthZDRead",
+    "name": "中青多账号阅读",
+    "keys": ["zqgetbody_body","index","zqgetbody_body2","index2","zqgetbody_body3","index3"],
+    "author": "@jiuli",
+    "settings": [
+       {
+          "id": "zqReadLog",
+          "name": "通知",
+          "val": false,
+          "type": "boolean",
+          "desc": "通知开关，30秒一次,较频繁！建议关闭。"
+      },
+      {
+        "id": "zqReadSuffix",
+        "name": "当前账号",
+        "val": "1",
+        "type": "number",
+        "desc": "当前抓取ck记录的账号序号，如：1、2、3目前仅支持3账号"
+      },
+      {
+        "id": "zqReadCount",
+        "name": "账号个数",
+        "val": "1",
+        "type": "number",
+        "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+      }
+    ],
+    "repo": "https://raw.githubusercontent.com/jiuli12/Script/main/Youth_AutoRead.js",
+    "icons": ["https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png", "https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png"],
+    "script": "https://raw.githubusercontent.com/jiuli12/Script/main/Youth_AutoRead.js"
+  }
+	]
+}
